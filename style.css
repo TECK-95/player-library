@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#flex-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#grid-container {
+    height: 80vh;
+    width: 80vw;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template-areas:
+        "canada usa"
+        "finland sweden";
+}
+
+.canada {
+    grid-area: canada;
+    display: flex;
+    justify-content: center;
+}
+
+.usa {
+    grid-area: usa;
+    display: flex;
+    justify-content: center;
+}
+
+.finland {
+    grid-area: finland;
+    display: flex;
+    justify-content: center;
+}
+
+.sweden {
+    grid-area: sweden;
+    display: flex;
+    justify-content: center;
+}
