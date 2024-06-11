@@ -11,6 +11,42 @@
         <header>
             <h1>4 Nations Stars</h1>
             <button id="add-player">Add Player</button>
+            <dialog>
+                <form>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" placeholder="Wayne" id="first-name">
+                    <br>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" placeholder="Gretzky" id="last-name">
+                    <br>
+                    <label for="country">Country:</label>
+                    <input required type="text" placeholder="Canada" id="country">
+                    <br>
+                    <label for="team">Team:</label>
+                    <input required type="text" placeholder="Edmonton Oilers" id="team">
+                    <br>
+                    <label for="age">Age:</label>
+                    <input required type="number" min="18" max="45" placeholder="21" id="age">
+                    <br>
+                    <label for="position">Position:</label>
+                    <select required id="position">
+                        <option selected>Center</option>
+                        <option>Left Wing</option>
+                        <option>Right Wing</option>
+                        <option>Defenceman</option>
+                    </select>
+                    <br>
+                    <label for="goals">Goals:</label>
+                    <input required type="number" min="0" max="92" placeholder="92" id="goals">
+                    <br>
+                    <label for="assists">Assists:</label>
+                    <input required type="number" min="0" max="163" placeholder="120" id="assists">
+                    <br>
+                    <button type="submit" id="submit">Submit</button>
+                    <br>
+                    <button type="submit" id="cancel">Cancel</button>
+                </form>
+            </dialog>
         </header>
         <main id="grid-container">
             <section class="canada">

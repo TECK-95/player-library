@@ -1,4 +1,3 @@
-const addPlayerBtn = document.querySelector("#add-player");
 const canada = document.querySelector(".canada");
 const canadaName = canada.appendChild(document.createElement("h4"));
 const canadaTeam = canada.appendChild(document.createElement("h4"));
@@ -19,6 +18,18 @@ const swedenName = sweden.appendChild(document.createElement("h4"));
 const swedenTeam = sweden.appendChild(document.createElement("h4"));
 const swedenAge = sweden.appendChild(document.createElement("h4"));
 const swedenPosition = sweden.appendChild(document.createElement("h4"));
+
+const dialog = document.querySelector("dialog");
+const addPlayerBtn = document.querySelector("#add-player");
+const cancelAddPlayerBtn = document.querySelector("#cancel");
+
+addPlayerBtn.addEventListener("click", () => {
+    dialog.showModal();
+});
+
+cancelAddPlayerBtn.addEventListener("click", () => {
+    dialog.close();
+  });
 
 const playerLibrary = [];
 

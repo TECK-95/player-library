@@ -81,3 +81,37 @@ header {
 h1 {
     text-shadow: 1px 2px 3px #000000;
 }
+
+button {
+    background-color: #F4EFED;
+    color: #000000;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+    border: solid 3px white;
+}
+
+#add-player {
+    padding: 10px;
+    background-color: #F4EFED;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 50%;
+    border: solid 3px black;
+}
+
+#add-player:hover {
+    background-color: grey;
+    color: white;
+    border: solid 3px white;
+}
+
+dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
