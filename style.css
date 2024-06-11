@@ -9,7 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 
 #grid-container {
@@ -20,28 +27,57 @@
     grid-template-areas:
         "canada usa"
         "finland sweden";
+    gap: 25px;
 }
 
 .canada {
     grid-area: canada;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, #F41234 0%, #F41234 0%, #F4EFED 100%);
+    color: #F4EFED;
+    text-shadow: 1px 1px 5px #000000;
+    box-shadow: 0px 0px 10px 3px #000000;
 }
 
 .usa {
     grid-area: usa;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, #F41234 0%, #234EF4 0%, #F4EFED 100%);
+    color: #F4EFED;
+    text-shadow: 1px 1px 5px #F41234;
+    box-shadow: 0px 0px 10px 3px #000000;
 }
 
 .finland {
     grid-area: finland;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, #ffe81c 0%, #1f8be4 0%, #F4EFED 100%);
+    color: #F4EFED;
+    text-shadow: 1px 1px 5px #000000;
+    box-shadow: 0px 0px 10px 3px #000000;
 }
 
 .sweden {
     grid-area: sweden;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, #1f8be4 0%, #ffe81c 0%, #F4EFED 100%);
+    color: #1f8be4;
+    text-shadow: 1px 1px 5px #F4EFED;
+    box-shadow: 0px 0px 10px 3px #000000;
+}
+
+h1 {
+    text-shadow: 1px 2px 3px #000000;
 }
