@@ -12,39 +12,51 @@
             <h1>4 Nations Stars</h1>
             <button id="add-player">Add Player</button>
             <dialog>
-                <form>
+                <form action="" method="post">
                     <label for="first-name">First Name:</label>
-                    <input type="text" placeholder="Wayne" id="first-name">
+                    <input type="text" placeholder="Wayne" id="first-name" name="first-name">
                     <br>
                     <label for="last-name">Last Name:</label>
-                    <input type="text" placeholder="Gretzky" id="last-name">
+                    <input type="text" placeholder="Gretzky" id="last-name" name="last-name">
                     <br>
                     <label for="country">Country:</label>
-                    <input required type="text" placeholder="Canada" id="country">
+                    <select required id="country">
+                        <option selected name="canada">Canada</option>
+                        <option name="usa">USA</option>
+                        <option name="finland">Finland</option>
+                        <option name="sweden">Sweden</option>
+                    </select>
                     <br>
                     <label for="team">Team:</label>
-                    <input required type="text" placeholder="Edmonton Oilers" id="team">
+                    <input required type="text" placeholder="Edmonton Oilers" id="team" name="team">
                     <br>
                     <label for="age">Age:</label>
-                    <input required type="number" min="18" max="45" placeholder="21" id="age">
+                    <input required type="number" min="18" max="45" placeholder="21" id="age" name="age">
                     <br>
                     <label for="position">Position:</label>
                     <select required id="position">
-                        <option selected>Center</option>
-                        <option>Left Wing</option>
-                        <option>Right Wing</option>
-                        <option>Defenceman</option>
+                        <option selected name="center">Center</option>
+                        <option name="left-wing">Left Wing</option>
+                        <option name="right-wing">Right Wing</option>
+                        <option name="defenceman">Defenceman</option>
+                        <option name="goalie">Goalie</option>
                     </select>
                     <br>
-                    <label for="goals">Goals:</label>
-                    <input required type="number" min="0" max="92" placeholder="92" id="goals">
+                    <label for="goals">Goals (N/A for Goalie):</label>
+                    <input type="number" min="0" max="92" placeholder="92" id="goals" name="goals">
                     <br>
-                    <label for="assists">Assists:</label>
-                    <input required type="number" min="0" max="163" placeholder="120" id="assists">
+                    <label for="assists">Assists (N/A for Goalie):</label>
+                    <input type="number" min="0" max="163" placeholder="120" id="assists" name="assists">
+                    <br>
+                    <label for="wins">Wins (N/A for Skaters):</label>
+                    <input type="number" min="0" max="50" placeholder="25" id="wins" name="wins">
+                    <br>
+                    <label for="shutouts">Shutouts (N/A for Skaters):</label>
+                    <input type="number" min="0" max="15" placeholder="5" id="shutouts" name="shutouts">
                     <br>
                     <button type="submit" id="submit">Submit</button>
                     <br>
-                    <button type="submit" id="cancel">Cancel</button>
+                    <button type="reset" id="cancel">Cancel</button>
                 </form>
             </dialog>
         </header>
@@ -53,36 +65,28 @@
                 <div class="country-name">
                     <h2>Canada</h2>
                 </div>
-                <div class="data">
-                    <div class="data-block">
-                    </div>
+                <div class="canada-data data">
                 </div>
             </section>
             <section class="usa">
                 <div class="country-name">
                     <h2>USA</h2>
                 </div>
-                <div class="data">
-                    <div class="data-block">
-                    </div>
+                <div class="usa-data data">
                 </div>
             </section>
             <section class="finland">
                 <div class="country-name">
                     <h2>Finland</h2>
                 </div>
-                <div class="data">
-                    <div class="data-block">
-                    </div>
+                <div class="finland-data data">
                 </div>
             </section>
             <section class="sweden">
                 <div class="country-name">
                     <h2>Sweden</h2>
                 </div>
-                <div class="data">
-                    <div class="data-block">
-                    </div>
+                <div class="sweden-data data">
                 </div>
             </section>
         </main>
