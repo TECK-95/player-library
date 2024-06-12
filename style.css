@@ -32,6 +32,7 @@ header {
 
 .canada {
     grid-area: canada;
+    gap: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -44,6 +45,7 @@ header {
 
 .usa {
     grid-area: usa;
+    gap: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -56,6 +58,7 @@ header {
 
 .finland {
     grid-area: finland;
+    gap: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -68,14 +71,29 @@ header {
 
 .sweden {
     grid-area: sweden;
+    gap: 5px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background: linear-gradient(180deg, #1f8be4 0%, #ffe81c 0%, #F4EFED 100%);
     color: #1f8be4;
     text-shadow: 1px 1px 5px #F4EFED;
     box-shadow: 0px 0px 10px 3px #000000;
+}
+
+.data {
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.data-block {
+    padding: 5px;
 }
 
 h1 {
